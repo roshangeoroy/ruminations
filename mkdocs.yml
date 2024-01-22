@@ -1,0 +1,114 @@
+site_name: Ruminations
+theme:
+  name: material
+  palette: 
+
+    # Palette toggle for light mode
+    - scheme: default
+      primary: amber
+      accent: indigo
+      toggle:
+        icon: material/eye
+        name: Turn off the lights
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/eye-outline
+        name: Turn on the lights
+  font:
+    text: Roboto
+    code: Roboto Mono
+  icon:
+    logo: material/bee
+  features:
+    - navigation.instant #for instant reloading                     
+    - navigation.instant.progress                     
+    - navigation.tracking                   
+    - navigation.tabs                   
+    - navigation.sections                   
+    - navigation.prune                    
+    - navigation.indexes                    
+    - toc.follow                    
+    - navigation.top                    
+    - search.suggest                    
+    - search.highlight                    
+    - search.share
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    - content.tooltips
+    - header.autohide
+    - navigation.expand
+    - navigation.footer
+                       
+    
+
+plugins:
+  - search
+  - blog
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/roshangeoroy
+    - icon: fontawesome/brands/letterboxd
+      link: https://letterboxd.com/roshangeoroy/
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/roshangeoroy/
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      normalize_issue_symbols: true
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      auto_append:
+        - includes/mkdocs.md
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+copyright: Copyright &copy; 2024 | Roshan Geo Roy
+
