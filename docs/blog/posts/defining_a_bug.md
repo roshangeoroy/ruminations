@@ -11,7 +11,7 @@ categories:
 # Always Use Braces with Your `#define` Expressions!
 
 Recently, I discovered the actual working of `#define`. When you use `#define` for expressions, it doesn’t evaluate or compile the expression at that point; it simply copies the expression wherever it appears in the code during the pre-processing stage.
-
+<!-- more -->
 Check out the example below to see why this can be an issue:
 
 ```c
