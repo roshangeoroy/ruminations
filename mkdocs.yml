@@ -1,7 +1,16 @@
 site_name: Ruminations
 theme:
   name: material
+  custom_dir: overrides
   palette: 
+  
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/eye-outline
+        name: Turn on the lights
 
     # Palette toggle for light mode
     - scheme: default
@@ -11,13 +20,7 @@ theme:
         icon: material/eye
         name: Turn off the lights
 
-    # Palette toggle for dark mode
-    - scheme: slate
-      primary: black
-      accent: indigo
-      toggle:
-        icon: material/eye-outline
-        name: Turn on the lights
+
   font:
     text: Roboto
     code: Roboto Mono

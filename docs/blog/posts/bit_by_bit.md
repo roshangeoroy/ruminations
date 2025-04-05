@@ -5,6 +5,7 @@ description: >
     A code study
 categories:
   - Blog
+comments: true
 ---
 
 # bit by bit
