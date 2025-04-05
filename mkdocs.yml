@@ -8,17 +8,7 @@ theme:
     - scheme: slate
       primary: black
       accent: indigo
-      toggle:
-        icon: material/eye-outline
-        name: Turn on the lights
 
-    # Palette toggle for light mode
-    - scheme: default
-      primary: amber
-      accent: indigo
-      toggle:
-        icon: material/eye
-        name: Turn off the lights
 
 
   font:
